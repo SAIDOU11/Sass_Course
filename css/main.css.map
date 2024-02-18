@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.scss","main.css"],"names":[],"mappings":"AAAA;EACE,qBAAA;ACCF;;ADEA;EACE,2BAAA;ACCF","file":"main.css","sourcesContent":[":root {\r\n  --bg-color: lightblue;\r\n}\r\n\r\nbody {\r\n  background: var(--bg-color);\r\n}\r\n",":root {\n  --bg-color: lightblue;\n}\n\nbody {\n  background: var(--bg-color);\n}"]}
