@@ -1,5 +1,5 @@
 :root {
-  --bg-color: #1f2039;
+  --bg-color: #515258;
 }
 
 html,
@@ -12,9 +12,6 @@ body {
   font-family: "Nunito", sans-serif;
   background: var(--bg-color);
   height: 100vh;
-}
-
-h1 {
   color: #fff;
 }
 
@@ -47,4 +44,4 @@ h1 {
 
 .white-color {
   color: #f8f8f8;
-}/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=style.css.map */
