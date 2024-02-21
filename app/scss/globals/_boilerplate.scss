@@ -1,3 +1,5 @@
+@use "../util" as u;
+
 html {
   box-sizing: border-box;
 }
@@ -9,8 +11,10 @@ html {
 }
 
 body {
-  font-family: "Nunito", sans-serif;
-  background: #33395f;
+  margin: 0;
+  padding: 0;
+  font-family: u.$font;
+  background: var(--background-color);
   height: 100vh;
-  color: #fff;
+  color: var(--text-color);
 }
