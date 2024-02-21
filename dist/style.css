@@ -11,7 +11,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Nunito", sans-serif;
   background: var(--background-color);
   height: 100vh;
   color: var(--text-color);
@@ -36,6 +36,6 @@ a:active {
 }
 
 :root {
-  --background-color: #1f2442;
+  --background-color: #262b49;
   --text-color: #fff;
 }/*# sourceMappingURL=style.css.map */
