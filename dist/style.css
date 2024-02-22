@@ -38,4 +38,26 @@ a:active {
 :root {
   --background-color: #262b49;
   --text-color: #fff;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, auto);
+  gap: 2.5em;
+}
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+  }
+}
+.grid__main, .grid__sidebar {
+  padding: 2.5em;
+}
+.grid__main {
+  background: #0000ff;
+}
+.grid__sidebar {
+  background: #ff00ff;
 }/*# sourceMappingURL=style.css.map */

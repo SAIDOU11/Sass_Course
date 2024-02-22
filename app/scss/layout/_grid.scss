@@ -1,7 +1,23 @@
 .grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, auto);
+  gap: 2.5em;
+
+  @media (min-width: 900px) {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  &__main,
+  &__sidebar {
+    padding: 2.5em;
+  }
   &__main {
+    background: #0000ff;
   }
 
   &__sidebar {
+    background: #ff00ff;
   }
 }
