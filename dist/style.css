@@ -47,7 +47,7 @@ a:active {
   width: min(100% - 2.5em, 1000px);
   margin-inline: auto;
 }
-@media (min-width: 900px) {
+@media (min-width: 56.25em) {
   .grid {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto;
@@ -61,4 +61,9 @@ a:active {
 }
 .grid__sidebar {
   background: #ff00ff;
+}
+@media (max-width: 56.25em) {
+  .grid__sidebar {
+    text-align: center;
+  }
 }/*# sourceMappingURL=style.css.map */
