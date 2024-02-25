@@ -19,13 +19,25 @@
   }
   &__main {
     background: #0000ff;
+
+    @include u.breakpoint(medium) {
+      background-color: #176324;
+    }
+
+    @include u.breakpoint(large) {
+      background-color: #c11717;
+    }
   }
 
   &__sidebar {
     background: #ff00ff;
 
-    @media (max-width: 56.25em) {
+    @include u.breakpoint-down(medium) {
       text-align: center;
+    }
+
+    @include u.breakpoint-down(small) {
+      text-align: right;
     }
   }
 }

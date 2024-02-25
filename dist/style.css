@@ -47,7 +47,7 @@ a:active {
   width: min(100% - 2.5em, 1000px);
   margin-inline: auto;
 }
-@media (min-width: 56.25em) {
+@media (min-width: 900px) {
   .grid {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto;
@@ -59,11 +59,26 @@ a:active {
 .grid__main {
   background: #0000ff;
 }
+@media (min-width: 700px) {
+  .grid__main {
+    background-color: #176324;
+  }
+}
+@media (min-width: 900px) {
+  .grid__main {
+    background-color: #c11717;
+  }
+}
 .grid__sidebar {
   background: #ff00ff;
 }
-@media (max-width: 56.25em) {
+@media (max-width: 899.98px) {
   .grid__sidebar {
     text-align: center;
+  }
+}
+@media (max-width: 499.98px) {
+  .grid__sidebar {
+    text-align: right;
   }
 }/*# sourceMappingURL=style.css.map */
