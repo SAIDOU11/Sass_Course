@@ -1,5 +1,3 @@
-@use "../util" as u;
-
 .grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -8,7 +6,7 @@
   width: min(100% - 2.5em, 1000px);
   margin-inline: auto;
 
-  @include u.breakpoint(large) {
+  @media (min-width: 900px) {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto;
   }
@@ -19,25 +17,9 @@
   }
   &__main {
     background: #0000ff;
-
-    @include u.breakpoint(medium) {
-      background-color: #176324;
-    }
-
-    @include u.breakpoint(large) {
-      background-color: #c11717;
-    }
   }
 
   &__sidebar {
     background: #831a65;
-
-    @include u.breakpoint-down(medium) {
-      text-align: center;
-    }
-
-    @include u.breakpoint-down(small) {
-      text-align: right;
-    }
   }
 }

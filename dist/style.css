@@ -59,26 +59,6 @@ a:active {
 .grid__main {
   background: #0000ff;
 }
-@media (min-width: 700px) {
-  .grid__main {
-    background-color: #176324;
-  }
-}
-@media (min-width: 900px) {
-  .grid__main {
-    background-color: #c11717;
-  }
-}
 .grid__sidebar {
   background: #831a65;
-}
-@media (max-width: 899.98px) {
-  .grid__sidebar {
-    text-align: center;
-  }
-}
-@media (max-width: 499.98px) {
-  .grid__sidebar {
-    text-align: right;
-  }
 }/*# sourceMappingURL=style.css.map */
