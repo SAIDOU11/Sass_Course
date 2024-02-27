@@ -87,11 +87,21 @@ a:active {
     background: #a21717;
   }
 }
-.grid__sidebar {
-  background: #b86ca2;
+@media (max-width: 899.98px) {
+  .grid__sidebar {
+    text-align: left;
+  }
 }
 @media (max-width: 699.98px) {
   .grid__sidebar {
-    background: #0b56a0;
+    text-align: center;
   }
+}
+.grid__widget, .grid__widget--green {
+  background: #b86ca2;
+  padding: 1em;
+}
+.grid__widget--green {
+  background: #b3c1e2;
+  color: #000;
 }/*# sourceMappingURL=style.css.map */

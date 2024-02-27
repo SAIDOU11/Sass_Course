@@ -26,10 +26,23 @@
   }
 
   &__sidebar {
-    background: #b86ca2;
+    @include u.breakpoint-down(medium) {
+      text-align: left;
+    }
 
     @include u.breakpoint-down(small) {
-      background: #0b56a0;
+      text-align: center;
+    }
+  }
+
+  &__widget {
+    $widget: &;
+    background: #b86ca2;
+    padding: 1em;
+    &--green {
+      @extend #{$widget};
+      background: #b3c1e2;
+      color: #000;
     }
   }
 }
