@@ -1,3 +1,5 @@
+@use "../utils" as u;
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -17,6 +19,7 @@ body {
 }
 
 body {
-  background: #4c4aa4;
-  color: #fff;
+  font-family: u.$fonts;
+  background: var(--background-color);
+  color: var(--text-color);
 }
