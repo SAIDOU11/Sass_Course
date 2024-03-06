@@ -1,3 +1,8 @@
+:root {
+  --bg-color: #d7d4d4;
+  --text-color: #000;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -17,8 +22,9 @@ body {
 }
 
 body {
-  background: #4c4aa4;
-  color: #fff;
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: "Nunito", sans-serif;
 }
 
 h1,
