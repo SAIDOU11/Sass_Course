@@ -1,0 +1,10 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, auto);
+  grid-gap: 2.5em;
+  &__main {
+  }
+  &__sidebar {
+  }
+}
