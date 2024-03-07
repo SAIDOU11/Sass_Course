@@ -51,6 +51,16 @@ a:active {
   grid-template-rows: repeat(2, auto);
   grid-gap: 2.5em;
 }
+.grid__main, .grid__sidebar {
+  padding: 2.5em;
+}
+.grid__main {
+  background-color: #911c87;
+}
+.grid__sidebar {
+  background-color: #781e1e;
+}
+
 img {
   width: 100%;
 }/*# sourceMappingURL=main.css.map */
