@@ -51,14 +51,20 @@ a:active {
   grid-template-rows: repeat(2, auto);
   grid-gap: 2.5em;
 }
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, 2fr 1fr);
+    grid-template-rows: auto;
+  }
+}
 .grid__main, .grid__sidebar {
   padding: 2.5em;
 }
 .grid__main {
-  background-color: #911c87;
+  background-color: #feda5f;
 }
 .grid__sidebar {
-  background-color: #781e1e;
+  background-color: #e0dbdb;
 }
 
 img {
