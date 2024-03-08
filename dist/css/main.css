@@ -50,10 +50,12 @@ a:active {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2, auto);
   grid-gap: 2.5em;
+  width: min(100% - 2.5em, 1000px);
+  margin-inline: auto;
 }
 @media (min-width: 900px) {
   .grid {
-    grid-template-columns: repeat(2, 2fr 1fr);
+    grid-template-columns: 2fr 1fr;
     grid-template-rows: auto;
   }
 }
