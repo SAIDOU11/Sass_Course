@@ -5,11 +5,12 @@
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2, auto);
   grid-gap: 2.5em;
-  // max-width: 1000px;
   width: min(100% - 2.5em, 1000px);
   margin-inline: auto;
 
   @media (min-width: 900px) {
+    // 700px    900px     1440px
+    // 699.98px    899.98px     1439.98px
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto;
   }
