@@ -1,4 +1,5 @@
 @use "../base" as *;
+@use "../utils" as u;
 
 .grid {
   display: grid;
@@ -8,9 +9,7 @@
   width: min(100% - 2.5em, 1000px);
   margin-inline: auto;
 
-  @media (min-width: 900px) {
-    // 700px    900px     1440px
-    // 699.98px    899.98px     1439.98px
+  @include u.breakpoint(large) {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto;
   }
@@ -19,9 +18,20 @@
     padding: 2.5em;
   }
   &__main {
-    background-color: $yellow-bg;
+    background: $yellow-bg;
+
+    @include u.breakpoint-down(small) {
+      background: #000;
+      color: #fff;
+    }
   }
   &__sidebar {
-    background-color: $gray-bg;
+    background: #000;
+    color: #fff;
+
+    @include u.breakpoint-down(medium) {
+      background: $gray-bg;
+      color: #000;
+    }
   }
 }
